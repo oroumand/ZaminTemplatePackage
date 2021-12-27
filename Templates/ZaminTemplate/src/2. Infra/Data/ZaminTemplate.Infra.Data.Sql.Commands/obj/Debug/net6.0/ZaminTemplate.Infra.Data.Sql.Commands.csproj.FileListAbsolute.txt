@@ -1,0 +1,17 @@
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\bin\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.deps.json
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\bin\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.dll
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\bin\Debug\net6.0\ref\ZaminTemplate.Infra.Data.Sql.Commands.dll
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\bin\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.pdb
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\bin\Debug\net6.0\ZaminTemplate.Core.Contracts.dll
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\bin\Debug\net6.0\ZaminTemplate.Core.Domain.dll
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\bin\Debug\net6.0\ZaminTemplate.Core.Contracts.pdb
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\bin\Debug\net6.0\ZaminTemplate.Core.Domain.pdb
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.csproj.AssemblyReference.cache
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.GeneratedMSBuildEditorConfig.editorconfig
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.AssemblyInfoInputs.cache
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.AssemblyInfo.cs
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.csproj.CoreCompileInputs.cache
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.csproj.CopyComplete
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.dll
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ref\ZaminTemplate.Infra.Data.Sql.Commands.dll
+E:\Source\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\obj\Debug\net6.0\ZaminTemplate.Infra.Data.Sql.Commands.pdb

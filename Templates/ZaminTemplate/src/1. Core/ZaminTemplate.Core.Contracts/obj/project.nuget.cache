@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "ti7Hde8DvUztMJ+3ALLub+m7l6tZ+ScP8XxVQ3D2ilVT4KCW2HyeHp7+jc98wIPX8/BeZakLLP3UZqhcC+EskA==",
+  "success": true,
+  "projectFilePath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Contracts\\ZaminTemplate.Core.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alireza\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.core.contracts\\6.0.1\\zamin.core.contracts.6.0.1.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.core.domain\\6.0.1\\zamin.core.domain.6.0.1.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.core.domain.toolkits\\6.0.1\\zamin.core.domain.toolkits.6.0.1.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.utilities\\6.0.1\\zamin.utilities.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

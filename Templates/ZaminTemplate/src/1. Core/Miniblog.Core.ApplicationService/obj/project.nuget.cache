@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "4XYix+Mhom2kDd6alnna8+8BCzm3m37v7gd/0BPWTLVsDrMwjG8JBLV0vV9QQerFRzlMr4wG2uKeIWRLzR4PdA==",
+  "success": true,
+  "projectFilePath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\Miniblog.Core.ApplicationService\\ZaminTemplate.Core.ApplicationService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alireza\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.core.applicationservices\\6.0.1\\zamin.core.applicationservices.6.0.1.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.core.contracts\\6.0.1\\zamin.core.contracts.6.0.1.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.core.domain\\6.0.1\\zamin.core.domain.6.0.1.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.core.domain.toolkits\\6.0.1\\zamin.core.domain.toolkits.6.0.1.nupkg.sha512",
+    "C:\\Users\\Alireza\\.nuget\\packages\\zamin.utilities\\6.0.1\\zamin.utilities.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Source\\ZaminTemplate\\src\\1. Core\\Miniblog.Core.ApplicationService\\ZaminTemplate.Core.ApplicationService.csproj": {}
+  },
+  "projects": {
+    "E:\\Source\\ZaminTemplate\\src\\1. Core\\Miniblog.Core.ApplicationService\\ZaminTemplate.Core.ApplicationService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Source\\ZaminTemplate\\src\\1. Core\\Miniblog.Core.ApplicationService\\ZaminTemplate.Core.ApplicationService.csproj",
+        "projectName": "ZaminTemplate.Core.ApplicationService",
+        "projectPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\Miniblog.Core.ApplicationService\\ZaminTemplate.Core.ApplicationService.csproj",
+        "packagesPath": "C:\\Users\\Alireza\\.nuget\\packages\\",
+        "outputPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\Miniblog.Core.ApplicationService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alireza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Contracts\\ZaminTemplate.Core.Contracts.csproj": {
+                "projectPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Contracts\\ZaminTemplate.Core.Contracts.csproj"
+              },
+              "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Domain\\ZaminTemplate.Core.Domain.csproj": {
+                "projectPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Domain\\ZaminTemplate.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Zamin.Core.ApplicationServices": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Contracts\\ZaminTemplate.Core.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Contracts\\ZaminTemplate.Core.Contracts.csproj",
+        "projectName": "ZaminTemplate.Core.Contracts",
+        "projectPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Contracts\\ZaminTemplate.Core.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Alireza\\.nuget\\packages\\",
+        "outputPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alireza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Domain\\ZaminTemplate.Core.Domain.csproj": {
+                "projectPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Domain\\ZaminTemplate.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Zamin.Core.Contracts": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Domain\\ZaminTemplate.Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Domain\\ZaminTemplate.Core.Domain.csproj",
+        "projectName": "ZaminTemplate.Core.Domain",
+        "projectPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Domain\\ZaminTemplate.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\Alireza\\.nuget\\packages\\",
+        "outputPath": "E:\\Source\\ZaminTemplate\\src\\1. Core\\ZaminTemplate.Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alireza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Zamin.Core.Domain": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Zamin.Core.Domain.Toolkits": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Zamin.Solution.Templates</id>
+    <version>6.0.1</version>
+    <title>Zamin Solution Templates</title>
+    <authors>Alireza Oroumand</authors>
+    <description>Templates to use when creating an application using zamin framework.</description>
+    <tags>dotnet-new templates contoso</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\.template.config\template.json" target="content\templates\ZaminTemplate\.template.config\template.json" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\.vs\ZaminTemplate\DesignTimeBuild\.dtbcache.v2" target="content\templates\ZaminTemplate\.vs\ZaminTemplate\DesignTimeBuild\.dtbcache.v2" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\.vs\ZaminTemplate\project-colors.json" target="content\templates\ZaminTemplate\.vs\ZaminTemplate\project-colors.json" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\.vs\ZaminTemplate\v17\.futdcache.v1" target="content\templates\ZaminTemplate\.vs\ZaminTemplate\v17\.futdcache.v1" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\.vs\ZaminTemplate\v17\.suo" target="content\templates\ZaminTemplate\.vs\ZaminTemplate\v17\.suo" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.ApplicationService\Blogs\Commands\CreateBlog\CreateBlogCommandHandler.cs" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.ApplicationService\Blogs\Commands\CreateBlog\CreateBlogCommandHandler.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.ApplicationService\Blogs\Commands\CreateBlog\CreateBlogCommandValidator.cs" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.ApplicationService\Blogs\Commands\CreateBlog\CreateBlogCommandValidator.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.ApplicationService\ZaminTemplate.Core.ApplicationService.csproj" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.ApplicationService\ZaminTemplate.Core.ApplicationService.csproj" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Contracts\Blogs\CommandRepositories\BlogCommandRepository.cs" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Contracts\Blogs\CommandRepositories\BlogCommandRepository.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Contracts\Blogs\Commands\CreateBlog\CreateBlogCommand.cs" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Contracts\Blogs\Commands\CreateBlog\CreateBlogCommand.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Contracts\ZaminTemplate.Core.Contracts.csproj" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Contracts\ZaminTemplate.Core.Contracts.csproj" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Domain\Blogs\Entities\Blog.cs" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Domain\Blogs\Entities\Blog.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Domain\Blogs\Events\BlogCreated.cs" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Domain\Blogs\Events\BlogCreated.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Domain\ZaminTemplate.Core.Domain.csproj" target="content\templates\ZaminTemplate\src\1. Core\ZaminTemplate.Core.Domain\ZaminTemplate.Core.Domain.csproj" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Blogs\BlogCommandRepository.cs" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Blogs\BlogCommandRepository.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Common\DescriptionConversion.cs" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Common\DescriptionConversion.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Common\TitleConversion.cs" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Common\TitleConversion.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Common\ZaminTemplateCommandDbContext.cs" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Common\ZaminTemplateCommandDbContext.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Migrations\20211227064926_init.cs" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Migrations\20211227064926_init.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Migrations\20211227064926_init.Designer.cs" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Migrations\20211227064926_init.Designer.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Migrations\ZaminTemplateCommandDbContextModelSnapshot.cs" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\Migrations\ZaminTemplateCommandDbContextModelSnapshot.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\ZaminTemplate.Infra.Data.Sql.Commands.csproj" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\ZaminTemplate.Infra.Data.Sql.Commands.csproj" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Queries\Common\ZaminTemplateQueryDbContext.cs" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Queries\Common\ZaminTemplateQueryDbContext.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Queries\ZaminTemplate.Infra.Data.Sql.Queries.csproj" target="content\templates\ZaminTemplate\src\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Queries\ZaminTemplate.Infra.Data.Sql.Queries.csproj" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\appsettings.json" target="content\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\appsettings.json" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\appsettings.serilog.json" target="content\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\appsettings.serilog.json" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\appsettings.zamin.json" target="content\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\appsettings.zamin.json" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\Blogs\BlogsController.cs" target="content\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\Blogs\BlogsController.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\Program.cs" target="content\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\Program.cs" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\Properties\launchSettings.json" target="content\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\Properties\launchSettings.json" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\ZaminTemplate.Endpoints.API.csproj" target="content\templates\ZaminTemplate\src\3. Endpoints\ZaminTemplate.Endpoints.API\ZaminTemplate.Endpoints.API.csproj" />
+    <file src="E:\Source\ZaminTemplatePackage\templates\ZaminTemplate\ZaminTemplate.sln" target="content\templates\ZaminTemplate\ZaminTemplate.sln" />
+  </files>
+</package>

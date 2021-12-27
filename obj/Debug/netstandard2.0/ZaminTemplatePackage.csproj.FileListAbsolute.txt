@@ -1,0 +1,10 @@
+E:\Source\ZaminTemplatePackage\bin\Debug\netstandard2.0\ZaminTemplatePackage.deps.json
+E:\Source\ZaminTemplatePackage\bin\Debug\netstandard2.0\ZaminTemplatePackage.dll
+E:\Source\ZaminTemplatePackage\bin\Debug\netstandard2.0\ZaminTemplatePackage.pdb
+E:\Source\ZaminTemplatePackage\obj\Debug\netstandard2.0\ZaminTemplatePackage.csproj.AssemblyReference.cache
+E:\Source\ZaminTemplatePackage\obj\Debug\netstandard2.0\ZaminTemplatePackage.GeneratedMSBuildEditorConfig.editorconfig
+E:\Source\ZaminTemplatePackage\obj\Debug\netstandard2.0\ZaminTemplatePackage.AssemblyInfoInputs.cache
+E:\Source\ZaminTemplatePackage\obj\Debug\netstandard2.0\ZaminTemplatePackage.AssemblyInfo.cs
+E:\Source\ZaminTemplatePackage\obj\Debug\netstandard2.0\ZaminTemplatePackage.csproj.CoreCompileInputs.cache
+E:\Source\ZaminTemplatePackage\obj\Debug\netstandard2.0\ZaminTemplatePackage.dll
+E:\Source\ZaminTemplatePackage\obj\Debug\netstandard2.0\ZaminTemplatePackage.pdb
