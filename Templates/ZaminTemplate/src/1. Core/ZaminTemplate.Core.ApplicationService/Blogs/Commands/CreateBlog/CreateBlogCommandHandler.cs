@@ -24,6 +24,8 @@ public class CreateBlogCommandHandler : CommandHandler<CreateBlogCommand>
 
         await _blogCommandRepository.InsertAsync(blog);
 
+        await _blogCommandRepository.CommitAsync();
+
         return await OkAsync();
     }
 }
