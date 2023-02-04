@@ -1,28 +1,29 @@
-﻿using ZaminTemplate.Core.Contracts.Blogs.CommandRepositories;
-using ZaminTemplate.Core.Contracts.Blogs.Commands.CreateBlog;
-using ZaminTemplate.Core.Domain.Blogs.Entities;
-using Zamin.Core.ApplicationServices.Commands;
+﻿using Zamin.Core.ApplicationServices.Commands;
 using Zamin.Core.Contracts.ApplicationServices.Commands;
 using Zamin.Utilities;
+using ZaminTemplate.Core.Contracts.Blogs.Commands;
+using ZaminTemplate.Core.Contracts.Blogs.Commands.CreateBlog;
+using ZaminTemplate.Core.Domain.Blogs.Entities;
 
-namespace ZaminTemplate.Core.ApplicationService.Blogs.Commands.CreateBlog
+namespace ZaminTemplate.Core.ApplicationService.Blogs.Commands.CreateBlog;
+
+public class CreateBlogCommandHandler : CommandHandler<CreateBlogCommand>
 {
-    public class CreateBlogCommandHandler : CommandHandler<CreateBlogCommand>
+
+    private readonly IBlogCommandRepository _blogCommandRepository;
+
+    public CreateBlogCommandHandler(ZaminServices zaminServices, IBlogCommandRepository blogCommandRepository)
+        : base(zaminServices)
     {
+        _blogCommandRepository = blogCommandRepository;
+    }
 
-        private readonly IBlogCommandRepository _blogCommandRepository;
+    public override async Task<CommandResult> Handle(CreateBlogCommand request)
+    {
+        Blog blog = new(request.BusunessId, request.Title, request.Description);
 
-        public CreateBlogCommandHandler(ZaminServices zaminServices, IBlogCommandRepository blogCommandRepository) : base(zaminServices)
-        {
-            _blogCommandRepository = blogCommandRepository;
-        }
+        await _blogCommandRepository.InsertAsync(blog);
 
-        public override async Task<CommandResult> Handle(CreateBlogCommand request)
-        {
-            Blog blog = new(request.BusunessId, request.Title, request.Description);
-            _blogCommandRepository.Insert(blog);
-            return await OkAsync();
-
-        }
+        return await OkAsync();
     }
 }
