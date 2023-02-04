@@ -1,16 +1,11 @@
-﻿using ZaminTemplate.Core.Domain.Blogs.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Zamin.Core.Domain.Entities;
+﻿using Zamin.Core.Domain.Entities;
 using Zamin.Core.Domain.Toolkits.ValueObjects;
 using Zamin.Core.Domain.ValueObjects;
+using ZaminTemplate.Core.Domain.Blogs.Events;
 
 namespace ZaminTemplate.Core.Domain.Blogs.Entities
 {
-    public class Blog:AggregateRoot
+    public class Blog : AggregateRoot
     {
         #region Properties
         public Title Title { get; private set; }
@@ -28,7 +23,7 @@ namespace ZaminTemplate.Core.Domain.Blogs.Entities
             Title = title;
             Description = description;
             AddEvent(new BlogCreated(businessId.Value.ToString(), Title.Value, Description.Value));
-        } 
+        }
         #endregion
 
     }

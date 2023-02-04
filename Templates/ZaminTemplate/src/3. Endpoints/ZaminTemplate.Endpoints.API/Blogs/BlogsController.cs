@@ -1,17 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ZaminTemplate.Core.Contracts.Blogs.Commands.CreateBlog;
 using Zamin.EndPoints.Web.Controllers;
+using ZaminTemplate.Core.Contracts.Blogs.Commands.CreateBlog;
 
-namespace ZaminTemplate.Endpoints.API.Blogs
+namespace ZaminTemplate.Endpoints.API.Blogs;
+
+[Route("api/[controller]")]
+[ApiController]
+
+public class BlogsController : BaseController
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class BlogsController : BaseController
-    {
-        [HttpPost]
-        public async Task<IActionResult> Post(CreateBlogCommand createBlog )
-        {
-            return await Create(createBlog);
-        }
-    }
+    [HttpPost("[action]")]
+    public async Task<IActionResult> CreateBlog(CreateBlogCommand createBlog) => await Create(createBlog);
 }

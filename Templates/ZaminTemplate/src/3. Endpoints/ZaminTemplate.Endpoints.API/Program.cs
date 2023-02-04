@@ -1,22 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ZaminTemplate.Infra.Data.Sql.Commands.Common;
-using ZaminTemplate.Infra.Data.Sql.Queries.Common;
-using Zamin.EndPoints.Web;
-using Zamin.EndPoints.Web.StartupExtentions;
-using Zamin.Utilities.Configurations;
+﻿using Zamin.Extensions.DependencyInjection;
+using Zamin.Utilities.SerilogRegistration.Extensions;
+using ZaminTemplate.Endpoints.API.Extentions;
 
-var builder = new ZaminProgram().Main(args, "appsettings.json", "appsettings.zamin.json", "appsettings.serilog.json");
-
-//Configuration
-ConfigurationManager Configuration = builder.Configuration;
-builder.Services.AddZaminApiServices(Configuration);
-builder.Services.AddDbContext<ZaminTemplateCommandDbContext>(c => c.UseSqlServer(Configuration.GetConnectionString("ZaminTemplateCommand_ConnectionString")));
-builder.Services.AddDbContext<ZaminTemplateQueryDbContext>(c => c.UseSqlServer(Configuration.GetConnectionString("ZaminTemplateQuery_ConnectionString")));
-
-//Middlewares
-var app = builder.Build();
-var zaminOptions = app.Services.GetService<ZaminConfigurationOptions>();
-
-app.UseZaminApiConfigure(zaminOptions, app.Environment);
-
-app.Run();
+SerilogExtensions.RunWithSerilogExceptionHandling(() =>
+{
+    var builder = WebApplication.CreateBuilder(args);
+    var app = builder.AddZaminSerilog(o =>
+    {
+        o.ApplicationName = builder.Configuration.GetValue<string>("ApplicationName");
+        o.ServiceId = builder.Configuration.GetValue<string>("ServiceId");
+        o.ServiceName = builder.Configuration.GetValue<string>("ServiceName");
+        o.ServiceVersion = builder.Configuration.GetValue<string>("ServiceVersion");
+    }).ConfigureServices().ConfigurePipeline();
+    app.Run();
+});

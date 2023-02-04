@@ -1,30 +1,48 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="Zamin.EndPoints.Web" Version="6.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		
+		<PackageReference Include="Zamin.EndPoints.Web" Version="7.0.0-beta.1" />
+		
+		<PackageReference Include="Zamin.Extensions.Caching.Distributed.Sql" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.Caching.InMemory" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.Events.PollingPublisher" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.Events.PollingPublisher.Dal.Dapper" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.MessageBus.RabbitMQ" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.MessageBus.MessageInbox" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.MessageBus.MessageInbox.Dal.Dapper" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.ObjectMappers.AutoMapper" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.Serializers.Microsoft" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.Translations.Parrot" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Extensions.UsersManagement" Version="7.0.0-beta.2" />
+		<PackageReference Include="Zamin.Utilities.SoftwarePartDetector" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Utilities.SerilogRegistration" Version="7.0.0-beta.1" />
+		<PackageReference Include="Zamin.Utilities.OpenTelemetryRegistration" Version="7.0.0-beta.1" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\1. Core\ZaminTemplate.Core.ApplicationService\ZaminTemplate.Core.ApplicationService.csproj" />
-    <ProjectReference Include="..\..\1. Core\ZaminTemplate.Core.Contracts\ZaminTemplate.Core.Contracts.csproj" />
-    <ProjectReference Include="..\..\1. Core\ZaminTemplate.Core.Domain\ZaminTemplate.Core.Domain.csproj" />
-    <ProjectReference Include="..\..\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\ZaminTemplate.Infra.Data.Sql.Commands.csproj" />
-    <ProjectReference Include="..\..\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Queries\ZaminTemplate.Infra.Data.Sql.Queries.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\1. Core\ZaminTemplate.Core.ApplicationService\ZaminTemplate.Core.ApplicationService.csproj" />
+		<ProjectReference Include="..\..\1. Core\ZaminTemplate.Core.Contracts\ZaminTemplate.Core.Contracts.csproj" />
+		<ProjectReference Include="..\..\1. Core\ZaminTemplate.Core.Domain\ZaminTemplate.Core.Domain.csproj" />
+		<ProjectReference Include="..\..\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Commands\ZaminTemplate.Infra.Data.Sql.Commands.csproj" />
+		<ProjectReference Include="..\..\2. Infra\Data\ZaminTemplate.Infra.Data.Sql.Queries\ZaminTemplate.Infra.Data.Sql.Queries.csproj" />
+	</ItemGroup>
 
 </Project>
