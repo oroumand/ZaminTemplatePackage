@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Alireza Oroumand",
+    "classifications": [ "Common", "Code" ],
+    "identity": "Zamin.Default.AggregateRootTemplate.CSharp",
+    "name": "Zamin Default Aggregate Root Template",
+    "shortName": "zaminaggcrud",
+    "sourceName":"ZaminAggregateCrud",    
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "symbols": {
+      "aggregate": {
+          "type": "parameter",
+          "defaultValue": "MyAggregate",
+          "replaces": "Blog",
+          "FileRename": "Blog"
+      },
+      "folder": {
+        "type": "parameter",
+        "defaultValue": "MyAggregateFolder",
+        "replaces": "FolderName",
+        "FileRename": "FolderName"
+    }      
+    }
+  }
