@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\1. Core\ZaminTemplate.Core.Contracts\ZaminTemplate.Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\1.Core\ZaminTemplate.Core.Contracts\ZaminTemplate.Core.Contracts.csproj" />
   </ItemGroup>
 
 </Project>
