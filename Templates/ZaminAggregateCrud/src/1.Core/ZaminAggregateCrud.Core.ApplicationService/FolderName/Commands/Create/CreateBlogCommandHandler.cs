@@ -5,7 +5,7 @@ using ZaminAggregateCrud.Core.Contracts.FolderName.Commands;
 using ZaminAggregateCrud.Core.Contracts.FolderName.Commands.Create;
 using ZaminAggregateCrud.Core.Domain.FolderName.Entities;
 
-namespace ZaminAggregateCrud.Core.ApplicationService.FolderName.Commands.Create;
+namespace ZaminAggregateCrud.Core.ApplicationService.Blogs.Commands.Create;
 
 public class CreateBlogCommandHandler : CommandHandler<CreateBlogCommand>
 {
