@@ -12,7 +12,7 @@ public sealed class GetBlogDetailHandler : QueryHandler<GetBlogByIdQuery, BlogDe
     private readonly IBlogQueryRepository _queryRepository;
 
     public GetBlogDetailHandler(ZaminServices zaminServices,
-                                  IBlogQueryRepository QueryRepository) : base(zaminServices)
+                                  IBlogQueryRepository queryRepository) : base(zaminServices)
     {
         _queryRepository = queryRepository;
     }

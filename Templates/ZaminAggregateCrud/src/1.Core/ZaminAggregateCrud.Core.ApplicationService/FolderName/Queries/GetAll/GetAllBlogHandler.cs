@@ -20,7 +20,7 @@ public sealed class GetAllBlogHandler : QueryHandler<GetAllBlogQuery, List<BlogL
 
     public override async Task<QueryResult<List<BlogListItemQr>>> Handle(GetAllBlogQuery query)
     {
-        return Result(await _queryRepository.Execute(entity));
+        return Result(await _queryRepository.Execute(query));
     }
 }
 
