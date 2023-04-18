@@ -10,17 +10,17 @@ namespace ZaminAggregateCrud.Core.ApplicationService.FolderName.Queries.GetAll;
 
 public sealed class GetAllBlogHandler : QueryHandler<GetAllBlogQuery, List<BlogListItemQr>>
 {
-    private readonly IBlogQueryRepository _blogQueryRepository;
+    private readonly IBlogQueryRepository _queryRepository;
 
     public GetAllBlogHandler(ZaminServices zaminServices,
-                                  IBlogQueryRepository blogQueryRepository) : base(zaminServices)
+                                  IBlogQueryRepository queryRepository) : base(zaminServices)
     {
-        _blogQueryRepository = blogQueryRepository;
+        _queryRepository = queryRepository;
     }
 
     public override async Task<QueryResult<List<BlogListItemQr>>> Handle(GetAllBlogQuery query)
     {
-        return Result(await _blogQueryRepository.Execute(query));
+        return Result(await _queryRepository.Execute(entity));
     }
 }
 

@@ -14,25 +14,25 @@ namespace ZaminAggregateCrud.Core.ApplicationService.Blogs.Commands.Update;
 public class UpdateBlogCommandHandler : CommandHandler<UpdateBlogCommand>
 {
 
-    private readonly IBlogCommandRepository _blogCommandRepository;
+    private readonly IBlogCommandRepository _commandRepository;
 
-    public UpdateBlogCommandHandler(ZaminServices zaminServices, IBlogCommandRepository blogCommandRepository)
+    public UpdateBlogCommandHandler(ZaminServices zaminServices, IBlogCommandRepository commandRepository)
         : base(zaminServices)
     {
-        _blogCommandRepository = blogCommandRepository;
+        _commandRepository = commandRepository;
     }
 
     public override async Task<CommandResult> Handle(UpdateBlogCommand request)
     {
-        Blog blog = await _blogCommandRepository.GetAsync(request.BlogId);
+        Blog entity = await _commandRepository.GetAsync(request.BlogId);
 
-        if (blog is null)
+        if (entity is null)
         {
-            throw new InvalidEntityStateException("VALIDATION_ERROR_NOT_EXIST", nameof(blog));
+            throw new InvalidEntityStateException("VALIDATION_ERROR_NOT_EXIST", nameof(entity));
         }
-        blog.Update(request.ToParameter());
+        entity.Update(request.ToParameter());
 
-        await _blogCommandRepository.CommitAsync();
+        await _commandRepository.CommitAsync();
 
         return Ok();
     }

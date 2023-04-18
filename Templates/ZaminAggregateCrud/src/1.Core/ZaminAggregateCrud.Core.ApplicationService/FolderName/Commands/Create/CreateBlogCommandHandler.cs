@@ -10,21 +10,21 @@ namespace ZaminAggregateCrud.Core.ApplicationService.Blogs.Commands.Create;
 public class CreateBlogCommandHandler : CommandHandler<CreateBlogCommand>
 {
 
-    private readonly IBlogCommandRepository _blogCommandRepository;
+    private readonly IBlogCommandRepository _commandRepository;
 
-    public CreateBlogCommandHandler(ZaminServices zaminServices, IBlogCommandRepository blogCommandRepository)
+    public CreateBlogCommandHandler(ZaminServices zaminServices, IBlogCommandRepository commandRepository)
         : base(zaminServices)
     {
-        _blogCommandRepository = blogCommandRepository;
+        _commandRepository = commandRepository;
     }
 
     public override async Task<CommandResult> Handle(CreateBlogCommand request)
     {
-        Blog blog = new(request.BusunessId);
+        Blog entity = new(request.BusunessId);
 
-        await _blogCommandRepository.InsertAsync(blog);
+        await _commandRepository.InsertAsync(entity);
 
-        await _blogCommandRepository.CommitAsync();
+        await _commandRepository.CommitAsync();
 
         return await OkAsync();
     }

@@ -10,15 +10,15 @@ namespace ZaminAggregateCrud.Infra.Data.Sql.Queries.FolderName.Entities
         public Guid BusinessId { get; set; }
 
 
-        public static explicit operator BlogListItemQr(Blog blog)=>
+        public static explicit operator BlogListItemQr(Blog entity)=>
                 new()
                 {
-                    Id = blog.Id
+                    Id = entity.Id
                 };
-        public static explicit operator BlogDetailQr(Blog blog) =>
+        public static explicit operator BlogDetailQr(Blog entity) =>
         new()
         {
-            Id = blog.Id
+            Id = entity.Id
         };
 
     }

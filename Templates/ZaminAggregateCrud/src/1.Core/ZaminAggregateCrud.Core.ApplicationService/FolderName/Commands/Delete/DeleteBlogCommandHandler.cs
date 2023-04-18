@@ -14,26 +14,26 @@ namespace ZaminAggregateCrud.Core.ApplicationService.Blogs.Commands.Delete;
 public class DeleteBlogCommandHandler : CommandHandler<DeleteBlogCommand>
 {
 
-    private readonly IBlogCommandRepository _blogCommandRepository;
+    private readonly IBlogCommandRepository _commandRepository;
 
-    public DeleteBlogCommandHandler(ZaminServices zaminServices, IBlogCommandRepository blogCommandRepository)
+    public DeleteBlogCommandHandler(ZaminServices zaminServices, IBlogCommandRepository commandRepository)
         : base(zaminServices)
     {
-        _blogCommandRepository = blogCommandRepository;
+        _commandRepository = commandRepository;
     }
 
     public override async Task<CommandResult> Handle(DeleteBlogCommand request)
     {
-        Blog blog = await _blogCommandRepository.GetAsync(request.BlogId);
+        Blog entity = await _commandRepository.GetAsync(request.BlogId);
 
-        if (blog is null)
+        if (entity is null)
         {
-            throw new InvalidEntityStateException("VALIDATION_ERROR_NOT_EXIST", nameof(blog));
+            throw new InvalidEntityStateException("VALIDATION_ERROR_NOT_EXIST", nameof(entity));
         }
        
-        blog.Delete();
-        _blogCommandRepository.Delete(blog);
-        await _blogCommandRepository.CommitAsync();
+        entity.Delete();
+        _commandRepository.Delete(entity);
+        await _commandRepository.CommitAsync();
 
         return Ok();
     }

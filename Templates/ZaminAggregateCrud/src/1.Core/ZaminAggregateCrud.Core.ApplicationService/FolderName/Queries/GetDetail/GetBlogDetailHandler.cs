@@ -9,17 +9,17 @@ namespace ZaminAggregateCrud.Core.ApplicationService.FolderName.Queries.GetDetai
 
 public sealed class GetBlogDetailHandler : QueryHandler<GetBlogByIdQuery, BlogDetailQr>
 {
-    private readonly IBlogQueryRepository _blogQueryRepository;
+    private readonly IBlogQueryRepository _queryRepository;
 
     public GetBlogDetailHandler(ZaminServices zaminServices,
-                                  IBlogQueryRepository blogQueryRepository) : base(zaminServices)
+                                  IBlogQueryRepository QueryRepository) : base(zaminServices)
     {
-        _blogQueryRepository = blogQueryRepository;
+        _queryRepository = queryRepository;
     }
 
     public override async Task<QueryResult<BlogDetailQr>> Handle(GetBlogByIdQuery query)
     {
-        return Result(await _blogQueryRepository.Execute(query));
+        return Result(await _queryRepository.Execute(query));
     }
 
 }
