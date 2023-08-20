@@ -4,8 +4,7 @@ using Serilog;
 using Zamin.EndPoints.Web.Extensions.ModelBinding;
 using Zamin.Extensions.DependencyInjection;
 using Zamin.Infra.Data.Sql.Commands.Interceptors;
-using Zamin.Utilities.SoftwarePartDetector.Services;
-using ZaminTemplate.Endpoints.DependencyInjection;
+using ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Extentions;
 using ZaminTemplate.Infra.Data.Sql.Commands.Common;
 using ZaminTemplate.Infra.Data.Sql.Queries.Common;
 
