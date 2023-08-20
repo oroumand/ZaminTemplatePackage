@@ -9,7 +9,7 @@ public class ZaminTemplateCommandDbContextFactory : IDesignTimeDbContextFactory<
     {
         var builder = new DbContextOptionsBuilder<ZaminTemplateCommandDbContext>();
 
-        builder.UseSqlServer("Server =.; Database=ZaminTemplateDb;User Id = ;Password= ; MultipleActiveResultSets=true; Encrypt = false");
+        builder.UseSqlServer("Server =.; Database=ZaminTemplateDb;User Id = ;Password = ; MultipleActiveResultSets = true; Encrypt = false");
 
         return new ZaminTemplateCommandDbContext(builder.Options);
     }
