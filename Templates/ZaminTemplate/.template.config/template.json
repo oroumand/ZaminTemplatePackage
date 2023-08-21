@@ -19,9 +19,9 @@
     },
     "dbcontext": {
       "type": "parameter",
-      "replaces": "ZaminDbContext",
-      "FileRename": "ZaminDbContext",
-      "defaultValue": "ZaminDbContext"
+      "replaces": "DbContextName",
+      "FileRename": "DbContextName",
+      "defaultValue": "DbContextName"
     }
   }
 }

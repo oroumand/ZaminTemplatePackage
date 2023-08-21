@@ -7,12 +7,6 @@
 		</PropertyGroup>
 
 		<ItemGroup>
-		  <Compile Remove="FolderName\**" />
-		  <EmbeddedResource Remove="FolderName\**" />
-		  <None Remove="FolderName\**" />
-		</ItemGroup>
-
-		<ItemGroup>
 				<ProjectReference Include="..\ZaminTemplate.Core.Domain\ZaminTemplate.Core.Domain.csproj" />
 		</ItemGroup>
 

@@ -45,11 +45,11 @@ public static class HostingExtensions
         //builder.Services.AddZaminSqlDistributedCache(configuration, "SqlDistributedCache");
 
         //CommandDbContext
-        builder.Services.AddDbContext<ZaminDbContextCommandDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("CommandDb_ConnectionString"))
+        builder.Services.AddDbContext<DbContextNameCommandDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("CommandDb_ConnectionString"))
             .AddInterceptors(new SetPersianYeKeInterceptor(), new AddAuditDataInterceptor()));
 
         //QueryDbContext
-        builder.Services.AddDbContext<ZaminDbContextQueryDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("QueryDb_ConnectionString")));
+        builder.Services.AddDbContext<DbContextNameQueryDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("QueryDb_ConnectionString")));
 
         //PollingPublisher
         builder.Services.AddZaminPollingPublisherDalSql(configuration, "PollingPublisherSqlStore");
@@ -91,7 +91,7 @@ public static class HostingExtensions
 
         app.UseHttpsRedirection();
 
-        //app.Services.ReceiveEventFromRabbitMqMessageBus(new KeyValuePair<string, string>("MiniBlog", "BlogCreated"));
+        //app.Services.ReceiveEventFromRabbitMqMessageBus(new KeyValuePair<string, string>("MiniAggregateName", "AggregateNameCreated"));
 
         //var useIdentityServer = app.UseIdentityServer("OAuth");
 
