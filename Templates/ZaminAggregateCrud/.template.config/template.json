@@ -27,8 +27,8 @@
         "type": "parameter",
         "replaces": "FolderName",
         "FileRename": "FolderName",
-        "defaultValue": "AggregateFolder"
-    }   ,
+        "defaultValue": "FolderName"
+      },
       "aggregate": {
           "type": "parameter",
           "replaces": "AggregateName",
