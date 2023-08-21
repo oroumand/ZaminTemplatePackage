@@ -1,18 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-	</PropertyGroup>
+		<PropertyGroup>
+				<TargetFramework>net7.0</TargetFramework>
+				<ImplicitUsings>enable</ImplicitUsings>
+				<Nullable>enable</Nullable>
+		</PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Zamin.Core.Contracts" Version="7.1.0-beta.1" />
-	</ItemGroup>
+		<ItemGroup>
+		  <Compile Remove="FolderName\**" />
+		  <EmbeddedResource Remove="FolderName\**" />
+		  <None Remove="FolderName\**" />
+		</ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\ZaminTemplate.Core.Domain\ZaminTemplate.Core.Domain.csproj" />
-		<ProjectReference Include="..\ZaminTemplate.Core.RequestResponse\ZaminTemplate.Core.RequestResponse.csproj" />
-	</ItemGroup>
+		<ItemGroup>
+				<PackageReference Include="Zamin.Core.Contracts" Version="7.5.1-beta.1" />
+		</ItemGroup>
+
+		<ItemGroup>
+				<ProjectReference Include="..\ZaminTemplate.Core.Domain\ZaminTemplate.Core.Domain.csproj" />
+				<ProjectReference Include="..\ZaminTemplate.Core.RequestResponse\ZaminTemplate.Core.RequestResponse.csproj" />
+		</ItemGroup>
 
 </Project>

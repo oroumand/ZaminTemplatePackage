@@ -7,6 +7,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="FolderName\**" />
+	  <Content Remove="FolderName\**" />
+	  <EmbeddedResource Remove="FolderName\**" />
+	  <None Remove="FolderName\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.2" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
 			<PrivateAssets>all</PrivateAssets>
@@ -19,7 +26,7 @@
 		
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 		
-		<PackageReference Include="Zamin.EndPoints.Web" Version="7.1.0-beta.1" />
+		<PackageReference Include="Zamin.EndPoints.Web" Version="7.5.1-beta.1" />
 		
 		<PackageReference Include="Zamin.Extensions.Caching.Distributed.Sql" Version="7.0.0-beta.1" />
 		<PackageReference Include="Zamin.Extensions.Caching.InMemory" Version="7.0.0-beta.1" />

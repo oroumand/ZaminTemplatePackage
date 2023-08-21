@@ -4,9 +4,9 @@ using Zamin.Extensions.Events.Outbox.Dal.EF;
 
 namespace ZaminTemplate.Infra.Data.Sql.Commands.Common;
 
-public class ZaminTemplateCommandDbContext : BaseOutboxCommandDbContext
+public class ZaminDbContextCommandDbContext : BaseOutboxCommandDbContext
 {
-    public ZaminTemplateCommandDbContext(DbContextOptions<ZaminTemplateCommandDbContext> options) : base(options)
+    public ZaminDbContextCommandDbContext(DbContextOptions<ZaminDbContextCommandDbContext> options) : base(options)
     {
     }
 

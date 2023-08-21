@@ -1,12 +1,27 @@
 ﻿{
-    "$schema":"http://json.schemastore.org/template",
-    "author": "Alireza Oroumand",
-    "classifications":["Common", "Solution","Zamin"],
-    "identity": "Zamin.Default.SolutionTemplate.CSharp",
-    "name": "Zamin Default Solution Template",
-    "shortName":"zaminsln",
-    "sourceName":"ZaminTemplate",
-    "preferNameDirectory":true,
-    "tags": {"language": "C#","type": "project"}
-
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Alireza Oroumand",
+  "classifications": [ "Common", "Solution", "Zamin" ],
+  "identity": "Zamin.Default.SolutionTemplate.CSharp",
+  "name": "Zamin Default Solution Template",
+  "shortName": "zaminsln",
+  "sourceName": "ZaminTemplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "namespace": {
+      "type": "parameter",
+      "replaces": "ZaminTemplate",
+      "FileRename": "ZaminTemplate",
+      "defaultValue": "ZaminTemplate"
+    },
+    "dbcontext": {
+      "type": "parameter",
+      "replaces": "ZaminDbContext",
+      "FileRename": "ZaminDbContext",
+      "defaultValue": "ZaminDbContext"
+    }
+  }
 }

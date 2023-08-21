@@ -45,11 +45,11 @@ public static class HostingExtensions
         //builder.Services.AddZaminSqlDistributedCache(configuration, "SqlDistributedCache");
 
         //CommandDbContext
-        builder.Services.AddDbContext<ZaminTemplateCommandDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("CommandDb_ConnectionString"))
+        builder.Services.AddDbContext<ZaminDbContextCommandDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("CommandDb_ConnectionString"))
             .AddInterceptors(new SetPersianYeKeInterceptor(), new AddAuditDataInterceptor()));
 
         //QueryDbContext
-        builder.Services.AddDbContext<ZaminTemplateQueryDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("QueryDb_ConnectionString")));
+        builder.Services.AddDbContext<ZaminDbContextQueryDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("QueryDb_ConnectionString")));
 
         //PollingPublisher
         builder.Services.AddZaminPollingPublisherDalSql(configuration, "PollingPublisherSqlStore");
