@@ -11,17 +11,29 @@
       "type": "item"
     },
     "symbols": {
-      "aggregate": {
-          "type": "parameter",
-          "defaultValue": "MyAggregate",
-          "replaces": "Blog",
-          "FileRename": "Blog"
+      "namespace": {
+        "type": "parameter",
+        "replaces": "ZaminTemplate",
+        "FileRename": "ZaminTemplate",
+        "defaultValue": "ZaminTemplate"
+      },
+      "dbcontext": {
+        "type": "parameter",
+        "replaces": "DbContextName",
+        "FileRename": "DbContextName",
+        "defaultValue": "DbContextName"
       },
       "folder": {
         "type": "parameter",
-        "defaultValue": "MyAggregateFolder",
         "replaces": "FolderName",
-        "FileRename": "FolderName"
-    }      
+        "FileRename": "FolderName",
+        "defaultValue": "FolderName"
+      },
+      "aggregate": {
+          "type": "parameter",
+          "replaces": "AggregateName",
+          "FileRename": "AggregateName",
+          "defaultValue": "AggregateName"
+      }  
     }
   }

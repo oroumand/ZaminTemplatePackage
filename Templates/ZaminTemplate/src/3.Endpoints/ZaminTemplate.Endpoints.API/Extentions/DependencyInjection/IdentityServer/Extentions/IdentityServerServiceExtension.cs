@@ -1,7 +1,6 @@
-﻿using Swashbuckle.AspNetCore.SwaggerUI;
-using ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.IdentityServer.Options;
+﻿using ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.IdentityServer.Options;
 
-namespace ZaminTemplate.Endpoints.DependencyInjection;
+namespace ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.IdentityServer.Extentions;
 
 public static class IdentityServerServiceExtension
 {

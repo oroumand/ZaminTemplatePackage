@@ -1,7 +1,7 @@
 ﻿using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace ZaminTemplate.Endpoints.DependencyInjection;
+namespace ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Filters;
 
 public class AddParamsToHeader : IOperationFilter
 {

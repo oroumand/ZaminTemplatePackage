@@ -4,8 +4,7 @@ using Serilog;
 using Zamin.EndPoints.Web.Extensions.ModelBinding;
 using Zamin.Extensions.DependencyInjection;
 using Zamin.Infra.Data.Sql.Commands.Interceptors;
-using Zamin.Utilities.SoftwarePartDetector.Services;
-using ZaminTemplate.Endpoints.DependencyInjection;
+using ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Extentions;
 using ZaminTemplate.Infra.Data.Sql.Commands.Common;
 using ZaminTemplate.Infra.Data.Sql.Queries.Common;
 
@@ -46,11 +45,11 @@ public static class HostingExtensions
         //builder.Services.AddZaminSqlDistributedCache(configuration, "SqlDistributedCache");
 
         //CommandDbContext
-        builder.Services.AddDbContext<ZaminTemplateCommandDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("CommandDb_ConnectionString"))
+        builder.Services.AddDbContext<DbContextNameCommandDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("CommandDb_ConnectionString"))
             .AddInterceptors(new SetPersianYeKeInterceptor(), new AddAuditDataInterceptor()));
 
         //QueryDbContext
-        builder.Services.AddDbContext<ZaminTemplateQueryDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("QueryDb_ConnectionString")));
+        builder.Services.AddDbContext<DbContextNameQueryDbContext>(c => c.UseSqlServer(configuration.GetConnectionString("QueryDb_ConnectionString")));
 
         //PollingPublisher
         builder.Services.AddZaminPollingPublisherDalSql(configuration, "PollingPublisherSqlStore");
@@ -92,7 +91,7 @@ public static class HostingExtensions
 
         app.UseHttpsRedirection();
 
-        //app.Services.ReceiveEventFromRabbitMqMessageBus(new KeyValuePair<string, string>("MiniBlog", "BlogCreated"));
+        //app.Services.ReceiveEventFromRabbitMqMessageBus(new KeyValuePair<string, string>("MiniAggregateName", "AggregateNameCreated"));
 
         //var useIdentityServer = app.UseIdentityServer("OAuth");
 

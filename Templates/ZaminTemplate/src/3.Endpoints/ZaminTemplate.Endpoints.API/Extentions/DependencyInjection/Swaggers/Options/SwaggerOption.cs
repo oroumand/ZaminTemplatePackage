@@ -1,4 +1,4 @@
-﻿namespace ZaminTemplate.Endpoints.DependencyInjection;
+﻿namespace ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Options;
 
 public class SwaggerOption
 {

@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Zamin.Infra.Data.Sql.Queries" Version="7.1.0-beta.1" />
+    <PackageReference Include="Zamin.Infra.Data.Sql.Queries" Version="7.5.1-beta.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\1.Core\ZaminTemplate.Core.Contracts\ZaminTemplate.Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\1.Core\ZaminTemplate.Core.RequestResponse\ZaminTemplate.Core.RequestResponse.csproj" />
   </ItemGroup>
 
 </Project>

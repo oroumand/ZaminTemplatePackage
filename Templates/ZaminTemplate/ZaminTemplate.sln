@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZaminTemplate.Infra.Data.Sq
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZaminTemplate.Endpoints.API", "src\3.Endpoints\ZaminTemplate.Endpoints.API\ZaminTemplate.Endpoints.API.csproj", "{C3F25BFC-4051-400F-8C8A-89F90D8FD0A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZaminTemplate.Core.RequestResponse", "src\1.Core\ZaminTemplate.Core.RequestResponse\ZaminTemplate.Core.RequestResponse.csproj", "{0AAAEAEF-F91C-4F04-A317-D1082AE8AF2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C3F25BFC-4051-400F-8C8A-89F90D8FD0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3F25BFC-4051-400F-8C8A-89F90D8FD0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3F25BFC-4051-400F-8C8A-89F90D8FD0A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAAEAEF-F91C-4F04-A317-D1082AE8AF2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAAEAEF-F91C-4F04-A317-D1082AE8AF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAAEAEF-F91C-4F04-A317-D1082AE8AF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAAEAEF-F91C-4F04-A317-D1082AE8AF2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{BC9C8A96-43C3-4D83-AD3A-ED68128C4E4C} = {32B42A7E-3C12-44B7-ADA9-41294B12820A}
 		{424EDF2D-8758-4445-BF2B-1ECD8BD83477} = {32B42A7E-3C12-44B7-ADA9-41294B12820A}
 		{C3F25BFC-4051-400F-8C8A-89F90D8FD0A0} = {81DE7253-0AB5-4E48-8614-759C04CAE244}
+		{0AAAEAEF-F91C-4F04-A317-D1082AE8AF2E} = {1E524427-9DDA-4241-8A5F-01F0E0E152FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07B7D400-5E74-48AF-A2B5-2FC92393384D}

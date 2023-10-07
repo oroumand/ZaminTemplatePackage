@@ -1,7 +1,10 @@
 ﻿using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Extentions;
+using ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Filters;
+using ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Options;
 
-namespace ZaminTemplate.Endpoints.DependencyInjection;
+namespace ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Extentions;
 
 public static class SwaggerExtentions
 {
