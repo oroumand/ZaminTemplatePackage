@@ -4,7 +4,6 @@ using Serilog;
 using Zamin.EndPoints.Web.Extensions.ModelBinding;
 using Zamin.Extensions.DependencyInjection;
 using Zamin.Infra.Data.Sql.Commands.Interceptors;
-using ZaminTemplate.Endpoints.API.Extentions.DependencyInjection.Swaggers.Extentions;
 using ZaminTemplate.Infra.Data.Sql.Commands.Common;
 using ZaminTemplate.Infra.Data.Sql.Queries.Common;
 
@@ -63,9 +62,7 @@ public static class HostingExtensions
 
         //builder.Services.AddZaminTraceJeager(configuration, "OpenTeletmetry");
 
-        //builder.Services.AddIdentityServer(configuration, "OAuth");
-
-        builder.Services.AddSwagger(configuration, "Swagger");
+        builder.Services.AddSwaggerGen();
 
         return builder.Build();
     }
@@ -78,7 +75,12 @@ public static class HostingExtensions
         //Serilog
         app.UseSerilogRequestLogging();
 
-        app.UseSwaggerUI("Swagger");
+        // Configure the HTTP request pipeline.
+        if (app.Environment.IsDevelopment())
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI();
+        }
 
         app.UseStatusCodePages();
 
