@@ -2,7 +2,7 @@
 
 namespace ZaminTemplate.Core.RequestResponse.FolderName.Queries.GetById;
 
-public sealed class GetAggregateNameByIdQuery : IQuery<AggregateNameQr?>
+public sealed class AggregateNameGetByIdQuery : IQuery<AggregateNameQr?>
 {
     public int Id { get; set; }
 }

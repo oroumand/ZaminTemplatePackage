@@ -6,17 +6,17 @@ using ZaminTemplate.Core.RequestResponse.FolderName.Queries.GetPagedFilter;
 
 namespace ZaminTemplate.Core.ApplicationService.FolderName.Queries.GetPagedFilter;
 
-public sealed class GetAggregateNameDetailHandler : QueryHandler<GetAggregateNamePagedFilterQuery, PagedData<AggregateNameListItemQr>>
+public sealed class AggregateNameGetPagedFilterHandler : QueryHandler<AggregateNameGetPagedFilterQuery, PagedData<AggregateNameListItemQr>>
 {
     private readonly IAggregateNameQueryRepository _queryRepository;
 
-    public GetAggregateNameDetailHandler(ZaminServices zaminServices,
-                                IAggregateNameQueryRepository queryRepository) : base(zaminServices)
+    public AggregateNameGetPagedFilterHandler(ZaminServices zaminServices, IAggregateNameQueryRepository queryRepository) 
+        : base(zaminServices)
     {
         _queryRepository = queryRepository;
     }
 
-    public override async Task<QueryResult<PagedData<AggregateNameListItemQr>>> Handle(GetAggregateNamePagedFilterQuery query)
+    public override async Task<QueryResult<PagedData<AggregateNameListItemQr>>> Handle(AggregateNameGetPagedFilterQuery query)
     {
         return Result(await _queryRepository.ExecuteAsync(query));
     }

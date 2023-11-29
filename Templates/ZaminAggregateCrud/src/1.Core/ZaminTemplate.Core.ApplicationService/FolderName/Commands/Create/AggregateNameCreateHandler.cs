@@ -7,18 +7,17 @@ using ZaminTemplate.Core.RequestResponse.FolderName.Commands.Create;
 
 namespace ZaminTemplate.Core.ApplicationService.FolderName.Commands.Create;
 
-public class CreateAggregateNameHandler : CommandHandler<CreateAggregateNameCommand, int>
+public class AggregateNameCreateHandler : CommandHandler<AggregateNameCreateCommand, int>
 {
     private readonly IAggregateNameCommandRepository _commandRepository;
 
-    public CreateAggregateNameHandler(ZaminServices zaminServices,
-                                      IAggregateNameCommandRepository commandRepository)
+    public AggregateNameCreateHandler(ZaminServices zaminServices, IAggregateNameCommandRepository commandRepository)
         : base(zaminServices)
     {
         _commandRepository = commandRepository;
     }
 
-    public override async Task<CommandResult<int>> Handle(CreateAggregateNameCommand command)
+    public override async Task<CommandResult<int>> Handle(AggregateNameCreateCommand command)
     {
         AggregateName entity = new(command.ToParameter());
 

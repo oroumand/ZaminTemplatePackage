@@ -6,17 +6,17 @@ using ZaminTemplate.Core.RequestResponse.FolderName.Queries.GetSelectList;
 
 namespace ZaminTemplate.Core.ApplicationService.FolderName.Queries.GetSelectList;
 
-public sealed class GetAggregateNameSelectListHandler : QueryHandler<GetAggregateNameSelectListQuery, List<AggregateNameSelectItemQr>>
+public sealed class AggregateNameGetSelectListHandler : QueryHandler<AggregateNameGetSelectListQuery, List<AggregateNameSelectItemQr>>
 {
     private readonly IAggregateNameQueryRepository _queryRepository;
 
-    public GetAggregateNameSelectListHandler(ZaminServices zaminServices,
-                                    IAggregateNameQueryRepository queryRepository) : base(zaminServices)
+    public AggregateNameGetSelectListHandler(ZaminServices zaminServices, IAggregateNameQueryRepository queryRepository) 
+        : base(zaminServices)
     {
         _queryRepository = queryRepository;
     }
 
-    public override async Task<QueryResult<List<AggregateNameSelectItemQr>>> Handle(GetAggregateNameSelectListQuery query)
+    public override async Task<QueryResult<List<AggregateNameSelectItemQr>>> Handle(AggregateNameGetSelectListQuery query)
     {
         return Result(await _queryRepository.ExecuteAsync(query));
     }

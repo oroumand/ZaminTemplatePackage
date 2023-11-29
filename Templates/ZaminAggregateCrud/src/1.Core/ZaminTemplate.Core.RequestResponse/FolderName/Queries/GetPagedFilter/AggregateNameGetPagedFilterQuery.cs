@@ -2,6 +2,6 @@
 
 namespace ZaminTemplate.Core.RequestResponse.FolderName.Queries.GetPagedFilter;
 
-public sealed class GetAggregateNamePagedFilterQuery : PageQuery<PagedData<AggregateNameListItemQr>>
+public sealed class AggregateNameGetPagedFilterQuery : PageQuery<PagedData<AggregateNameListItemQr>>
 {
 }

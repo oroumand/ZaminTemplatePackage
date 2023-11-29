@@ -16,7 +16,7 @@ public class AggregateNameQueryRepository : BaseQueryRepository<DbContextNameQue
     {
     }
 
-    public async Task<AggregateNameQr?> ExecuteAsync(GetAggregateNameByIdQuery query)
+    public async Task<AggregateNameQr?> ExecuteAsync(AggregateNameGetByIdQuery query)
     {
         return await _dbContext.Set<AggregateName>()
             .Where(AggregateName => AggregateName.Id == query.Id)
@@ -24,12 +24,12 @@ public class AggregateNameQueryRepository : BaseQueryRepository<DbContextNameQue
             .FirstOrDefaultAsync();
     }
 
-    public async Task<List<AggregateNameSelectItemQr>> ExecuteAsync(GetAggregateNameSelectListQuery query)
+    public async Task<List<AggregateNameSelectItemQr>> ExecuteAsync(AggregateNameGetSelectListQuery query)
     {
         return await _dbContext.Set<AggregateName>().Select(AggregateName => (AggregateNameSelectItemQr)AggregateName).ToListAsync();
     }
 
-    public async Task<PagedData<AggregateNameListItemQr>> ExecuteAsync(GetAggregateNamePagedFilterQuery query)
+    public async Task<PagedData<AggregateNameListItemQr>> ExecuteAsync(AggregateNameGetPagedFilterQuery query)
     {
         var filter = _dbContext.Set<AggregateName>().AsQueryable();
 

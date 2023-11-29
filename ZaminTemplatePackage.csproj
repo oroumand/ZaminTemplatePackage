@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
-		<PackageVersion>7.1.1</PackageVersion>
+		<PackageVersion>8.0.1</PackageVersion>
 		<PackageId>Zamin.Solution.Templates</PackageId>
 		<Title>Zamin Solution Templates</Title>
 		<Authors>Alireza Oroumand</Authors>

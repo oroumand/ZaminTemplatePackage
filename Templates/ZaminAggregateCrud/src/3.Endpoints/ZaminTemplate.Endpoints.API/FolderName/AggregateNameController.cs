@@ -12,33 +12,33 @@ namespace ZaminTemplate.Endpoints.API.FolderName;
 
 [Route("api/[controller]")]
 
-public sealed class AggregateNamesController : BaseController
+public sealed class AggregateNameController : BaseController
 {
     #region Commands
     [HttpPost("Create")]
-    public async Task<IActionResult> CreateAggregateName(CreateAggregateNameCommand createAggregateName)
-        => await Create<CreateAggregateNameCommand, int>(createAggregateName);
+    public async Task<IActionResult> CreateAggregateName([FromBody] AggregateNameCreateCommand command)
+        => await Create<CreateAggregateNameCommand, int>(command);
 
-    [HttpPost("Update")]
-    public async Task<IActionResult> CreateAggregateName(UpdateAggregateNameCommand updateAggregateName)
-        => await Edit(updateAggregateName);
+    [HttpPut("Update")]
+    public async Task<IActionResult> UpdateAggregateName([FromBody] AggregateNameUpdateCommand command)
+        => await Edit(command);
 
     [HttpDelete("Delete")]
-    public async Task<IActionResult> DeleteAggregateName(DeleteAggregateNameCommand DeleteAggregateName)
-        => await Delete(DeleteAggregateName);
+    public async Task<IActionResult> DeleteAggregateName([FromBody] AggregateNameDeleteCommand command)
+        => await Delete(command);
     #endregion
 
     #region Queries
     [HttpGet("GetById")]
-    public async Task<IActionResult> GetAggregateNameById([FromQuery] GetAggregateNameByIdQuery query)
-        => await Query<GetAggregateNameByIdQuery, AggregateNameQr?>(query);
+    public async Task<IActionResult> GetAggregateNameById([FromQuery] AggregateNameGetByIdQuery query)
+        => await Query<AggregateNameGetByIdQuery, AggregateNameQr?>(query);
 
     [HttpGet("GetSelectList")]
-    public async Task<IActionResult> GetAggregateNameSelectList([FromQuery] GetAggregateNameSelectListQuery query)
-        => await Query<GetAggregateNameSelectListQuery, List<AggregateNameSelectItemQr>>(query);
+    public async Task<IActionResult> GetAggregateNameSelectList([FromQuery] AggregateNameGetSelectListQuery query)
+        => await Query<AggregateNameGetSelectListQuery, List<AggregateNameSelectItemQr>>(query);
 
     [HttpGet("GetPagedFilter")]
-    public async Task<IActionResult> GetAggregateNamePagedFilter([FromQuery] GetAggregateNamePagedFilterQuery query)
-        => await Query<GetAggregateNamePagedFilterQuery, PagedData<AggregateNameListItemQr>>(query);
+    public async Task<IActionResult> GetAggregateNamePagedFilter([FromQuery] AggregateNameGetPagedFilterQuery query)
+        => await Query<AggregateNameGetPagedFilterQuery, PagedData<AggregateNameListItemQr>>(query);
     #endregion
 }
