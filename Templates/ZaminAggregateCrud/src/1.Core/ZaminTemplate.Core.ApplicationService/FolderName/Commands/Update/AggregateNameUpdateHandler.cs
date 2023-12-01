@@ -8,18 +8,17 @@ using ZaminTemplate.Core.RequestResponse.FolderName.Commands.Update;
 
 namespace ZaminTemplate.Core.ApplicationService.FolderName.Commands.Update;
 
-public class UpdateAggregateNameCommandHandler : CommandHandler<UpdateAggregateNameCommand>
+public class AggregateNameUpdateHandler : CommandHandler<AggregateNameUpdateCommand>
 {
     private readonly IAggregateNameCommandRepository _commandRepository;
 
-    public UpdateAggregateNameCommandHandler(ZaminServices zaminServices,
-                                             IAggregateNameCommandRepository commandRepository)
+    public AggregateNameUpdateHandler(ZaminServices zaminServices, IAggregateNameCommandRepository commandRepository)
         : base(zaminServices)
     {
         _commandRepository = commandRepository;
     }
 
-    public override async Task<CommandResult> Handle(UpdateAggregateNameCommand command)
+    public override async Task<CommandResult> Handle(AggregateNameUpdateCommand command)
     {
         AggregateName entity = await _commandRepository.GetAsync(command.Id);
 

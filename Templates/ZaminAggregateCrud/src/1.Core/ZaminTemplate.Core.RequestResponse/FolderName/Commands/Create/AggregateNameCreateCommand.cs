@@ -3,7 +3,7 @@ using ZaminTemplate.Core.Domain.FolderName.Parameters;
 
 namespace ZaminTemplate.Core.RequestResponse.FolderName.Commands.Create;
 
-public sealed class CreateAggregateNameCommand : ICommand<int>
+public sealed class AggregateNameCreateCommand : ICommand<int>
 {
     public Guid BusinessId { get; set; }
 

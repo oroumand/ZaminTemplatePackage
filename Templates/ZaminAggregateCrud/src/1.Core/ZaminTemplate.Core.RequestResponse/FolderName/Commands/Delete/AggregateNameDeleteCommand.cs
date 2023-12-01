@@ -2,7 +2,7 @@
 
 namespace ZaminTemplate.Core.RequestResponse.FolderName.Commands.Delete;
 
-public sealed class DeleteAggregateNameCommand : ICommand
+public sealed class AggregateNameDeleteCommand : ICommand
 {
     public int Id { get; set; }
 }

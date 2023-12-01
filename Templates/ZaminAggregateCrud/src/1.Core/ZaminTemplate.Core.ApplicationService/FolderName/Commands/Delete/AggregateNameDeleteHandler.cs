@@ -8,18 +8,17 @@ using ZaminTemplate.Core.RequestResponse.FolderName.Commands.Delete;
 
 namespace ZaminTemplate.Core.ApplicationService.FolderName.Commands.Delete;
 
-public class DeleteAggregateNameCommandHandler : CommandHandler<DeleteAggregateNameCommand>
+public class AggregateNameDeleteHandler : CommandHandler<AggregateNameDeleteCommand>
 {
     private readonly IAggregateNameCommandRepository _commandRepository;
 
-    public DeleteAggregateNameCommandHandler(ZaminServices zaminServices,
-                                             IAggregateNameCommandRepository commandRepository)
+    public AggregateNameDeleteHandler(ZaminServices zaminServices, IAggregateNameCommandRepository commandRepository)
         : base(zaminServices)
     {
         _commandRepository = commandRepository;
     }
 
-    public override async Task<CommandResult> Handle(DeleteAggregateNameCommand command)
+    public override async Task<CommandResult> Handle(AggregateNameDeleteCommand command)
     {
         AggregateName entity = await _commandRepository.GetAsync(command.Id);
 

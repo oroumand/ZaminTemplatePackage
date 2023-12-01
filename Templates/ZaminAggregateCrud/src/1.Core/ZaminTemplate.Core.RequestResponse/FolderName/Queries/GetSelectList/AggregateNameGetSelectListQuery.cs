@@ -2,6 +2,6 @@
 
 namespace ZaminTemplate.Core.RequestResponse.FolderName.Queries.GetSelectList;
 
-public sealed class GetAggregateNameSelectListQuery : IQuery<List<AggregateNameSelectItemQr>>
+public sealed class AggregateNameGetSelectListQuery : IQuery<List<AggregateNameSelectItemQr>>
 {
 }
