@@ -17,7 +17,7 @@ public sealed class AggregateNameController : BaseController
     #region Commands
     [HttpPost("Create")]
     public async Task<IActionResult> CreateAggregateName([FromBody] AggregateNameCreateCommand command)
-        => await Create<CreateAggregateNameCommand, int>(command);
+        => await Create<AggregateNameCreateCommand, int>(command);
 
     [HttpPut("Update")]
     public async Task<IActionResult> UpdateAggregateName([FromBody] AggregateNameUpdateCommand command)

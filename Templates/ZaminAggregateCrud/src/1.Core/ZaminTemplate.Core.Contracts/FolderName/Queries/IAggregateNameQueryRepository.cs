@@ -7,9 +7,9 @@ namespace ZaminTemplate.Core.Contracts.FolderName.Queries;
 
 public interface IAggregateNameQueryRepository
 {
-    Task<AggregateNameQr?> ExecuteAsync(GetAggregateNameByIdQuery query);
+    Task<AggregateNameQr?> ExecuteAsync(AggregateNameGetByIdQuery query);
 
-    Task<List<AggregateNameSelectItemQr>> ExecuteAsync(GetAggregateNameSelectListQuery query);
+    Task<List<AggregateNameSelectItemQr>> ExecuteAsync(AggregateNameGetSelectListQuery query);
 
-    Task<PagedData<AggregateNameListItemQr>> ExecuteAsync(GetAggregateNamePagedFilterQuery query);
+    Task<PagedData<AggregateNameListItemQr>> ExecuteAsync(AggregateNameGetPagedFilterQuery query);
 }
