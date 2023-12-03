@@ -1,23 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<PackageType>Template</PackageType>
-		<PackageVersion>8.0.1</PackageVersion>
-		<PackageId>Zamin.Solution.Templates</PackageId>
-		<Title>Zamin Solution Templates</Title>
-		<Authors>Alireza Oroumand</Authors>
-		<Description>Templates to use when creating an application using zamin framework.</Description>
-		<PackageTags>dotnet-new;templates;contoso</PackageTags>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<PropertyGroup>
+				<PackageType>Template</PackageType>
+				<PackageVersion>8.0.1</PackageVersion>
+				<PackageId>Zamin.Solution.Templates</PackageId>
+				<Title>Zamin Solution Templates</Title>
+				<Authors>Alireza Oroumand</Authors>
+				<Description>Templates to use when creating an application using zamin framework.</Description>
+				<PackageTags>dotnet-new;templates;contoso</PackageTags>
+				<TargetFramework>netstandard2.0</TargetFramework>
+				<PackageIcon>icon.png</PackageIcon>
 
-		<IncludeContentInPack>true</IncludeContentInPack>
-		<IncludeBuildOutput>false</IncludeBuildOutput>
-		<ContentTargetFolders>content</ContentTargetFolders>
-	</PropertyGroup>
+				<IncludeContentInPack>true</IncludeContentInPack>
+				<IncludeBuildOutput>false</IncludeBuildOutput>
+				<ContentTargetFolders>content</ContentTargetFolders>
 
-	<ItemGroup>
-		<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
-		<Compile Remove="**\*" />
-	</ItemGroup>
+		</PropertyGroup>
+
+		<ItemGroup>
+				<None Include="icon.png" Pack="true" PackagePath=""/>
+				<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+				<Compile Remove="**\*" />
+		</ItemGroup>
 
 </Project>
