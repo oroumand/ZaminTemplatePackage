@@ -2,7 +2,7 @@
 
 		<PropertyGroup>
 				<PackageType>Template</PackageType>
-				<PackageVersion>8.0.1</PackageVersion>
+				<PackageVersion>8.0.3</PackageVersion>
 				<PackageId>Zamin.Solution.Templates</PackageId>
 				<Title>Zamin Solution Templates</Title>
 				<Authors>Alireza Oroumand</Authors>
