@@ -11,9 +11,7 @@
 		</ItemGroup>
 
 		<ItemGroup>
-				<ProjectReference Include="..\ZaminTemplate.Core.Contracts\ZaminTemplate.Core.Contracts.csproj" />
-				<ProjectReference Include="..\ZaminTemplate.Core.Domain\ZaminTemplate.Core.Domain.csproj" />
-				<ProjectReference Include="..\ZaminTemplate.Core.RequestResponse\ZaminTemplate.Core.RequestResponse.csproj" />
+		  <ProjectReference Include="..\Contracts\ZaminTemplate.Core.Contracts.csproj" />
 		</ItemGroup>
 
 </Project>

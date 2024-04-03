@@ -12,7 +12,7 @@
 		</ItemGroup>
 
 		<ItemGroup>
-		  <ProjectReference Include="..\ZaminTemplate.Core.Resources\ZaminTemplate.Core.Resources.csproj" />
+		  <ProjectReference Include="..\Resources\ZaminTemplate.Core.Resources.csproj" />
 		</ItemGroup>
 
 </Project>
