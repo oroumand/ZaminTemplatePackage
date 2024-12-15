@@ -61,8 +61,12 @@ public static class HostingExtensions
         //builder.Services.AddZaminRabbitMqMessageBus(configuration, "RabbitMq");
 
         //builder.Services.AddZaminTraceJeager(configuration, "OpenTeletmetry");
+        
+        //API Documentation
+        builder.Services.AddZaminScalar(builder.Configuration, "Scalar");
 
-        builder.Services.AddSwaggerGen();
+
+
 
         return builder.Build();
     }
@@ -78,8 +82,8 @@ public static class HostingExtensions
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
-            app.UseSwagger();
-            app.UseSwaggerUI();
+            app.MapOpenApi();
+            app.UseZaminScalar();
         }
 
         app.UseStatusCodePages();

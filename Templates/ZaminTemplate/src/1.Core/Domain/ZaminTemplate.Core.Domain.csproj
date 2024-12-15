@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 		<PropertyGroup>
-				<TargetFramework>net8.0</TargetFramework>
+				<TargetFramework>net9.0</TargetFramework>
 				<ImplicitUsings>enable</ImplicitUsings>
 				<Nullable>enable</Nullable>
 		</PropertyGroup>
 
 		<ItemGroup>
-				<PackageReference Include="Zamin.Core.Domain" Version="8.0.0" />
-				<PackageReference Include="Zamin.Core.Domain.Toolkits" Version="8.0.0" />
+				<PackageReference Include="Zamin.Core.Domain" Version="9.0.0" />
+				<PackageReference Include="Zamin.Core.Domain.Toolkits" Version="9.0.0" />
 		</ItemGroup>
 
 		<ItemGroup>
